@@ -1,0 +1,26 @@
+<xml>
+  <animals>
+    <elephant id="3">
+      <name>elephant1</name>
+      <trunk>large</trunk>
+    </elephant>
+    <monkey id="1">
+      <name>monkey1</name>
+      <yrsold>23</yrsold>
+      <personality hilarious="true">quiet</personality>
+      <street>300 Monkey St</street>
+      <city>Cincinnati</city>
+      <state>Oh</state>
+      <zip>45219</zip>
+    </monkey>
+    <monkey id="2">
+      <name>monkey2</name>
+      <yrsold>33</yrsold>
+      <personality hilarious="false">loud</personality>
+      <street>301 Monkey St</street>
+      <city>Cincinnati</city>
+      <state>Oh</state>
+      <zip>45219</zip>
+    </monkey>
+  </animals>
+</xml>
