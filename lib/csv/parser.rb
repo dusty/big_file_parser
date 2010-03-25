@@ -16,16 +16,20 @@ module BigFileParser
       end
       
       def run
-        ::CSV.foreach(@file,{:headers => @header}) do |row|
+        stream { |element| elements << element }
+        elements
+      end
+
+      def stream(&block)
+        ::CSV.foreach(@file, {:headers => @header}) do |row|
           element = @object.new
           @csv_properties.each do |property|
             result = row[property.location]
             result = result.blank? ? nil : result
             element.send("#{property.name}=",result)
           end
-          elements << element
+          yield element
         end
-        elements
       end
       
       protected
