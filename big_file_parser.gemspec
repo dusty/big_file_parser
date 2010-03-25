@@ -1,6 +1,6 @@
 Gem::Specification.new do |s| 
   s.name = "big_file_parser" 
-  s.version = "0.0.5" 
+  s.version = "0.0.6" 
   s.author = "Dusty Doris" 
   s.email = "github@dusty.name" 
   s.homepage = "http://code.dusty.name" 
