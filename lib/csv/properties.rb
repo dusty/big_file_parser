@@ -17,7 +17,7 @@ module BigFileParser
       end
       
       module ClassMethods
-        
+
         ##
         # Parse an csv file
         #
